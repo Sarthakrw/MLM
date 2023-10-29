@@ -34,7 +34,7 @@ model = NGram(dataset=data, num_neurons=100, context_len=3, num_embedding=10)
 history, loss = model.train(iterations=1000, learning_rate=0.1, batch_size=32)
 
 #Inference
-output = model.predict(text="Human 1: ", num_tokens=50)
+output = model.predict(text="Human 1: ", num_tokens=100)
 
 print(output)
 ```
